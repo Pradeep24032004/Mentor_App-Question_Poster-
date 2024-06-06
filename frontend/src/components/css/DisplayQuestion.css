@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .display-question-container {
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .main-title {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .questions-section {
+    margin-top: 20px;
+  }
+  
+  .section-title {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .question-card {
+    background: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .question-title {
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .question-description {
+    margin: 10px 0;
+    color: #666;
+  }
+  
+  .requested-message {
+    color: #d9534f;
+    margin: 10px 0;
+  }
+  
+  .request-button {
+    background: #5cb85c;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .request-button:hover {
+    background: #4cae4c;
+  }
+  
+  .mentor-requests, .accepted-mentor {
+    margin-top: 10px;
+  }
+  
+  .mentor-requests-title, .accepted-mentor-title {
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .mentor-request-item, .accepted-mentor-item {
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .display-question-container {
+      padding: 15px;
+    }
+  
+    .request-button {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .display-question-container {
+      width: 90%;
+      padding: 10px;
+    }
+  
+    .main-title, .section-title {
+      font-size: 20px;
+    }
+  
+    .request-button {
+      font-size: 14px;
+    }
+  }
+  
