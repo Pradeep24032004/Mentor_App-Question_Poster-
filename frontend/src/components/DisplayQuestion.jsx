@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-//import './DisplayQuestion.css'; // Import the CSS file
 import './css/DisplayQuestion.css';
 const DisplayQuestion = ({ mentorEmail }) => {
   const [questions, setQuestions] = useState([]);
