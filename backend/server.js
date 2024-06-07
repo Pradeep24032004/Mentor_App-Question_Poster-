@@ -264,17 +264,6 @@ app.post('/questions/:id/accept', async (req, res) => {
   }
 }); 
 
-/*(correct one)
-app.post('/questions/:id/codeInput', async (req, res) => {
-  const { codeInput } = req.body;
-  try {
-    const question = await Question.findByIdAndUpdate(req.params.id, { $push: { codeInput: { content: codeInput } } }, { new: true });
-    res.json({ codeInput: question.codeInput });
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-});
-*/
 // Create a Nodemailer transporter
 const transporter1 = nodemailer.createTransport({
   service: 'Gmail', // e.g., 'gmail'
@@ -318,22 +307,6 @@ app.post('/questions/:id/codeInput', async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 });
-/*
-// Add answer output
-app.post('/questions/:id/ansOutput', async (req, res) => {
-  const { content } = req.body;
-  try {
-    const question = await Question.findByIdAndUpdate(
-      req.params.id,
-      { $push: { ansOutput: { content } } },
-      { new: true }
-    );
-    res.json({ ansOutput: question.ansOutput });
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-}); */
-
 // Create a Nodemailer transporter
 const transporter2 = nodemailer.createTransport({
   service: 'Gmail', // e.g., 'gmail'
