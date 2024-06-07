@@ -1,4 +1,3 @@
-// src/MentorSignUp.js
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
@@ -27,7 +26,6 @@ const navigate = useNavigate();
     setError('');
     setSuccessMessage('');
 
-    // Basic validation
     if (!formData.username || !formData.email || !formData.password || !formData.mgrid) {
       setError('All fields are required');
       return;
