@@ -2,8 +2,6 @@ import React, {useState, useEffect} from "react";
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import DisplayQuestion from "./DisplayQuestion.jsx";
-//import MentorResponse from "./MentorResponse.jsx";
-//import Question from "./Question.jsx";
 function MentorHome (){
     const [user, setUser] = useState(null);
     //const [userEmail1, setUserEmail] = useState(null);
