@@ -1,50 +1,5 @@
-/*(correct code)
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-
-const MentorResponse = ({ mentorEmail }) => {
-    const [questions, setQuestions] = useState([]);
-
-    useEffect(() => {
-        if (mentorEmail) {
-            axios.get(`http://localhost:5000/resquestions?mentorEmail=${mentorEmail}`)
-                .then(response => setQuestions(response.data))
-                .catch(error => console.error(error));
-        }
-    }, [mentorEmail]);
-
-    return (
-        <div>
-            <h1>Questions</h1>
-            <div>
-                <h2>Questions for Mentor: {mentorEmail}</h2>
-                {questions.map(q => (
-                    <div key={q._id}>
-                        <p>Question ID:{q._id}</p>
-                        <h3>{q.question}</h3>
-                        <h4>Description</h4>
-                        <p>{q.description}</p>
-                        <h4>mentor requests:</h4>
-                        <p>{q.mentorRequests}</p>
-                        <h4>Accepted Mentor:</h4>
-                        <p>{q.acceptedMentor}</p>
-                        <h4>Code:</h4>
-                        {q.codeInput.map((code, index) => (
-                            <p key={index}>{code.content} - {new Date(code.timestamp).toLocaleString()}</p>
-                        ))}
-                                
-                       
-                    </div>
-                ))}
-            </div>
-        </div>
-    );
-};
-
-export default MentorResponse; */
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-//import './MentorResponse.css'; // Import the CSS file
 import './css/MentorResponse.css';
 const MentorResponse = ({ mentorEmail }) => {
     const [questions, setQuestions] = useState([]);
