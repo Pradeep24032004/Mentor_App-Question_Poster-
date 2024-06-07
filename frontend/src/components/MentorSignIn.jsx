@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
@@ -84,8 +83,3 @@ function MentorSignIn() {
 }
 
 export default MentorSignIn;
-
-/*
-  <button className="rst-mn" onClick={handleResetPassword}>Reset Password</button> 
-
-  */
